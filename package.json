@@ -1,0 +1,15 @@
+{
+  "name": "Final-Project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "common.js",
+  "scripts": {
+    "server": "http-server"
+  },
+  "keywords": [],
+  "author": "Vlad Alekseev",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  }
+}
