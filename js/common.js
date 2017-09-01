@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
 
 
+    Object.prototype.on = function(event, fn) {
+        this.addEventListener(event, fn);
+    };
+
+
     /*==========  Sandwich toggle  ==========*/
 
     var sandwich = document.querySelector('.main-header__sandwich');
@@ -12,8 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var magnifier = document.querySelector('.main-nav__search');
     document.body.clientWidth < 1024 && magnifier.addEventListener('click', expandSearch);
 
-    console.log(document.body.clientWidth);
-    console.log(window.innerWidth);
 
 });
 
@@ -34,4 +37,5 @@ function sandwichToggle() {
 function expandSearch() {
     this.classList.add('expand-search');
     document.querySelector('.main-nav__search > input').style.width = '100%';
+    document.querySelector('.main-nav').style.paddingRight = '12%';
 }

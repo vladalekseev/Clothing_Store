@@ -1,0 +1,52 @@
+[
+  {
+    "articul" : "001",
+    "name" : "Only Skinny Jeans",
+    "price" : "65.50",
+    "image" : "img/Catalog/product1.jpg"
+  },
+  {
+    "articul" : "002",
+    "name" : "Neck Knitted Jumper",
+    "price" : "76.25",
+    "image" : "img/Catalog/product2.jpg"
+  },
+  {
+    "articul" : "003",
+    "name" : "Turtle Neck Jumper in Rib",
+    "price" : "130.25",
+    "image" : "img/Catalog/product3.jpg"
+  },
+  {
+    "articul" : "004",
+    "name" : "With Patchwork Crochet",
+    "price" : "80.60",
+    "image" : "img/Catalog/product4.jpg"
+  },
+  {
+    "articul" : "005",
+    "name" : "Levi’s Jeans for women",
+    "price" : "80.60",
+    "image" : "img/Catalog/product5.jpg",
+    "note" : "More colours"
+  },
+  {
+    "articul" : "006",
+    "name" : "Boyfriend T-Shirt with Bohemian Print",
+    "price" : "90.00",
+    "image" : "img/Catalog/product6.jpg",
+    "note" : "£120.00 -25%"
+  },
+  {
+    "articul" : "007",
+    "name" : "Colour Block",
+    "price" : "550.50",
+    "image" : "img/Catalog/product7.jpg"
+  },
+  {
+    "articul" : "008",
+    "name" : "Monki Festval Knitted",
+    "price" : "24.75",
+    "image" : "img/Catalog/product8.jpg"
+  }
+]

@@ -4,8 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Template</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <script src="js/common.js"></script>
+    <script src="js/shopping-bag.js"></script>
+
 </head>
 <body>
+
+    <header class="main-header">
+        <h1 class="main-header__title"><a href="#">TL</a></h1>
+        <div class="main-header__state">
+            <div class="state__sign-up"><a href="#">E-mail sing up</a></div>
+            <div class="state__bag"><a href="#">Bag (0)</a></div>
+        </div>
+        <ul class="main-header__sandwich">
+            <li class="sandwich-item"></li>
+            <li class="sandwich-item"></li>
+            <li class="sandwich-item"></li>
+        </ul>
+    </header>
+
+    <nav class="main-nav nav-hidden">
+        <div class="main-nav__item"><a href="#">Women</a></div>
+        <div class="main-nav__item"><a href="#">Men</a></div>
+        <div class="main-nav__item"><a href="#">Handbags</a></div>
+        <div class="main-nav__item"><a href="#">Accessories</a></div>
+        <div class="main-nav__item"><a href="#">Sale</a></div>
+        <div class="main-nav__item"><a href="#">New Arrivals</a></div>
+        <div class="main-nav__item"><a href="#">Clearance</a></div>
+        <div class="main-nav__item"><a href="#">Store Locator</a></div>
+        <div class="main-nav__search">
+            <input type="text" placeholder="Style Name">
+            <button></button>
+        </div>
+    </nav>
+
+
+    <section class="shopping-bag">
+        <h2 class="shopping-bag__header">Shopping bag</h2>
+        <div class="shopping-bag__goods">
+            <div class="shopping-bag__product">
+                <div class="shopping-bag__product_overlay">
+                    <img src="img/Catalog/product1.jpg" class="shopping-bag__product_img" alt="Oversized Cardigan">
+                    <div class="shopping-bag__product_img-overlay"><a href="#">View item</a></div>
+                </div>
+                <div class="shopping-bag__description">
+                    <strong class="shopping-bag__description_name">Only Skinny Jeans</strong>
+                    <div class="shopping-bag__description_price">£390.25</div>
+                    <div class="shopping-bag__description_characteristic shopping-bag__description_color">Color: Phillipa wash</div>
+                    <div class="shopping-bag__description_characteristic shopping-bag__description_size">Size: UK 17</div>
+                    <div class="shopping-bag__description_characteristic shopping-bag__description_quantity">Quantity: 1</div>
+                    <button class="remove-item">Remove item</button>
+                </div>
+            </div>
+            <div class="shopping-bag__product">
+                <div class="shopping-bag__product_overlay">
+                    <img src="img/Catalog/product4.jpg" class="shopping-bag__product_img" alt="Oversized Cardigan">
+                    <div class="shopping-bag__product_img-overlay"><a href="#">View item</a></div>
+                </div>
+                <div class="shopping-bag__description">
+                    <strong class="shopping-bag__description_name">Paul & Joe Sister Jumper with Neon Trims</strong>
+                    <div class="shopping-bag__description_price">£390.25</div>
+                    <div class="shopping-bag__description_characteristic shopping-bag__description_color">Color: Phillipa wash</div>
+                    <div class="shopping-bag__description_characteristic shopping-bag__description_size">Size: UK 17</div>
+                    <div class="shopping-bag__description_characteristic shopping-bag__description_quantity">Quantity: 1</div>
+                    <button class="remove-item">Remove item</button>
+                </div>
+            </div>
+            <div class="shopping-bag__product">
+                <div class="shopping-bag__product_overlay">
+                    <img src="img/Catalog/product3.jpg" class="shopping-bag__product_img" alt="Oversized Cardigan">
+                    <div class="shopping-bag__product_img-overlay"><a href="#">View item</a></div>
+                </div>
+                <div class="shopping-bag__description">
+                    <strong class="shopping-bag__description_name">Only Skinny Jeans</strong>
+                    <div class="shopping-bag__description_price">£390.25</div>
+                    <div class="shopping-bag__description_characteristic shopping-bag__description_color">Color: Phillipa wash</div>
+                    <div class="shopping-bag__description_characteristic shopping-bag__description_size">Size: UK 17</div>
+                    <div class="shopping-bag__description_characteristic shopping-bag__description_quantity">Quantity: 1</div>
+                    <button class="remove-item">Remove item</button>
+                </div>
+            </div>
+            <div class="shopping-bag__product">
+                <div class="shopping-bag__product_overlay">
+                    <img src="img/Catalog/product2.jpg" class="shopping-bag__product_img" alt="Oversized Cardigan">
+                    <div class="shopping-bag__product_img-overlay"><a href="#">View item</a></div>
+                </div>
+                <div class="shopping-bag__description">
+                    <strong class="shopping-bag__description_name">Only Skinny Jeans</strong>
+                    <div class="shopping-bag__description_price">£390.25</div>
+                    <div class="shopping-bag__description_characteristic shopping-bag__description_color">Color: Phillipa wash</div>
+                    <div class="shopping-bag__description_characteristic shopping-bag__description_size">Size: UK 17</div>
+                    <div class="shopping-bag__description_characteristic shopping-bag__description_quantity">Quantity: 1</div>
+                    <button class="remove-item">Remove item</button>
+                </div>
+            </div>
+        </div>
+        <p class="shopping-bag__return">You've qualified for Free UK Next Day Delivery on your order. Don't forget to enter the code <span>nexday</span> at checkout</p>
+        <div class="shopping-bag__status">
+            <button class="empty-bag">Empty bag</button>
+            <button class="buy-now">Buy now</button>
+            <div class="shopping-bag__total-cost">
+                <span>Total Cost</span>
+                <div class="shopping-bag__total-cost_price">£1 640.50</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <ul class="main-footer__site-information main-footer__site-information_links">
+            <li class="site-information__item site-information__item_title">Quick Links</li>
+            <li class="site-information__item"><a href="#">Store locator</a></li>
+            <li class="site-information__item"><a href="#">Gift cards</a></li>
+            <li class="site-information__item"><a href="#">Size guide</a></li>
+            <li class="site-information__item"><a href="#">About us</a></li>
+            <li class="site-information__item"><a href="#">Support</a></li>
+        </ul>
+        <ul class="main-footer__site-information main-footer__site-information_customer">
+            <li class="site-information__item site-information__item_title">Customer Care</li>
+            <li class="site-information__item"><a href="#">Customer service</a></li>
+            <li class="site-information__item"><a href="#">Track my order</a></li>
+            <li class="site-information__item"><a href="#">Return policy</a></li>
+            <li class="site-information__item"><a href="#">Shipping & delivery</a></li>
+            <li class="site-information__item"><a href="#">Contact us</a></li>
+            <li class="site-information__item"><a href="#">Careers</a></li>
+        </ul>
+        <ul class="main-footer__site-information main-footer__site-information_questions">
+            <li class="site-information__item site-information__item_title">Questions</li>
+            <li class="site-information__item site-information__item_twitter">Tweet us <a href="#">@<strong>template</strong></a></li>
+        </ul>
+        <ul class="main-footer__site-information main-footer__site-information_order">
+            <li class="site-information__item site-information__item_title">Order by phone</li>
+            <li class="site-information__item"><a href="tel:+88004094712">8-800-409-47-12</a></li>
+        </ul>
+        <div class="main-footer__additional-info">
+            <a href="#">Legal notice</a><a href="#">Privacy policy</a><a href="#">Site map</a>
+        </div>
+        <ul class="main-footer__social">
+            <li class="main-footer__delivery-note">
+                We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.
+            </li>
+            <li><a href="#" class="main-footer__social_fb" target="_blank"></a></li>
+            <li><a href="#" class="main-footer__social_twiiter" target="_blank"></a></li>
+        </ul>
+        <p class="main-footer__copyright">&copy; 2010–2015, The Template Group inc.</p>
+        <div class="main-footer__share">
+            <span class="main-footer__share_text">Share</span>
+            <span class="main-footer__share_amount">1 437</span>
+        </div>
+    </footer>
 
 </body>
 </html>

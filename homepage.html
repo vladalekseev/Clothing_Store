@@ -6,160 +6,152 @@
     <title>Template</title>
 
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 
     <script src="js/common.js"></script>
+    <script src="js/homepage.js"></script>
 
 </head>
 <body>
 
-    <div class="test">
-        <header class="main-header">
-            <h1 class="main-header__title"><a href="#">Template</a></h1>
-            <div class="main-header__state">
-                <div class="state__sign-up"><a href="#">E-mail sing up</a></div>
-                <div class="state__bag"><a href="#">Bag (0)</a></div>
-            </div>
-            <ul class="main-header__sandwich">
-                <li class="sandwich-item"></li>
-                <li class="sandwich-item"></li>
-                <li class="sandwich-item"></li>
-            </ul>
-        </header>
+    <header class="main-header">
+        <h1 class="main-header__title"><a href="#">Template</a></h1>
+        <div class="main-header__state">
+            <div class="state__sign-up"><a href="#">E-mail sing up</a></div>
+            <div class="state__bag"><a href="#">Bag (0)</a></div>
+        </div>
+        <ul class="main-header__sandwich">
+            <li class="sandwich-item"></li>
+            <li class="sandwich-item"></li>
+            <li class="sandwich-item"></li>
+        </ul>
+    </header>
 
-        <nav class="main-nav nav-hidden">
-            <div class="main-nav__item"><a href="#">Women</a></div>
-            <div class="main-nav__item"><a href="#">Men</a></div>
-            <div class="main-nav__item"><a href="#">Handbags</a></div>
-            <div class="main-nav__item"><a href="#">Accessories</a></div>
-            <div class="main-nav__item"><a href="#">Sale</a></div>
-            <div class="main-nav__item"><a href="#">New Arrivals</a></div>
-            <div class="main-nav__item"><a href="#">Clearance</a></div>
-            <div class="main-nav__item"><a href="#">Store Locator</a></div>
-            <div class="main-nav__search">
-                <input type="text" placeholder="Style Name">
-                <button></button>
-            </div>
-        </nav>
+    <nav class="main-nav nav-hidden">
+        <div class="main-nav__item"><a href="#">Women</a></div>
+        <div class="main-nav__item"><a href="#">Men</a></div>
+        <div class="main-nav__item"><a href="#">Handbags</a></div>
+        <div class="main-nav__item"><a href="#">Accessories</a></div>
+        <div class="main-nav__item"><a href="#">Sale</a></div>
+        <div class="main-nav__item"><a href="#">New Arrivals</a></div>
+        <div class="main-nav__item"><a href="#">Clearance</a></div>
+        <div class="main-nav__item"><a href="#">Store Locator</a></div>
+        <div class="main-nav__search">
+            <input type="text" placeholder="Style Name">
+            <button></button>
+        </div>
+    </nav>
 
-        <section class="carousel">
-            <div class="carousel__slider">
-                <a href="#"><img src="img/Homepage/desktop/slide1.jpg" alt="slide1"></a>
-                <button class="slider__arrow_prev"></button>
-                <button class="slider__arrow_next"></button>
-            </div>
-            <ul class="carousel__pager">
-                <li class="pager__item"></li>
-                <li class="pager__item"></li>
-                <li class="pager__item"></li>
-                <li class="pager__item"></li>
-            </ul>
-        </section>
+    <section class="carousel">
+        <div class="carousel-container"></div>
+        <button class="slider__arrow_prev"></button>
+        <button class="slider__arrow_next"></button>
+        <ul class="carousel__pager">
+        </ul>
+    </section>
 
-        <section class="recommended">
-            <div class="recommended__product">
-                <a href="#">
-                    <img src="img/Homepage/nike-red.jpg" alt="Red Nike">
-                    <div class="product__description">
-                        <strong>Nike Red</strong><br>
-                        <em>New</em>
-                    </div>
-                </a>
-            </div>
-            <div class="recommended__product product_caps">
-                <a href="#">
-                    <img src="img/Homepage/caps&hats.jpg" alt="Caps and hats">
-                    <div class="product__description">
-                        <strong>Caps & Hats</strong><br>
-                        <em>Sale -50%</em>
-                    </div>
-                </a>
-            </div>
-            <div class="recommended__product product_bag">
-                <a href="#">
-                    <img src="img/Homepage/bag.jpg" alt="Bag">
-                    <div class="product__description_small">
-                        <strong>Sale</strong><br>
-                        <em>-70%</em>
-                    </div>
-                </a>
-            </div>
-        </section>
-
-        <section class="arrivals">
-            <h2 class="arrivals__header">New arrivals</h2>
-            <div class="arrivals__goods">
-                <div class="arrivals__product">
-                    <img src="img/Homepage/arrival1.jpg" class="arrivals__product_img" alt="Straight Leg Jeans">
-                    <strong class="arrivals__product_name">Straight Leg Jeans</strong>
-                    <span class="arrivals__product_price">£55.00</span>
+    <section class="recommended">
+        <div class="recommended__product">
+            <a href="item-details.html">
+                <img src="img/Homepage/nike-red.jpg" alt="Red Nike">
+                <div class="product__description">
+                    <strong>Nike Red</strong><br>
+                    <em>New</em>
                 </div>
-                <div class="arrivals__product">
-                    <img src="img/Homepage/arrival2.jpg" class="arrivals__product_img" alt="Boyfriend T-Shirt with Bohemian Print">
-                    <strong class="arrivals__product_name">Boyfriend T-Shirt with
-                        Bohemian Print</strong>
-                    <span class="arrivals__product_price">£34.25</span>
+            </a>
+        </div>
+        <div class="recommended__product product_caps">
+            <a href="catalog.html">
+                <img src="img/Homepage/caps&hats.jpg" alt="Caps and hats">
+                <div class="product__description">
+                    <strong>Caps & Hats</strong><br>
+                    <em>Sale -50%</em>
                 </div>
-                <div class="arrivals__product arrivals__product_tablet">
-                    <img src="img/Homepage/arrival3.jpg" class="arrivals__product_img" alt="Knee Jean">
-                    <strong class="arrivals__product_name">Only Busted Knee Jean</strong>
-                    <span class="arrivals__product_price">£140.50</span>
+            </a>
+        </div>
+        <div class="recommended__product product_bag">
+            <a href="item-details.html">
+                <img src="img/Homepage/bag.jpg" alt="Bag">
+                <div class="product__description_small">
+                    <strong>Sale</strong><br>
+                    <em>-70%</em>
                 </div>
-                <div class="arrivals__product arrivals__product_desktop">
-                    <img src="img/Homepage/arrival4.jpg" class="arrivals__product_img" alt="Only Skinny Jeans">
-                    <strong class="arrivals__product_name">Only Skinny Jeans</strong>
-                    <span class="arrivals__product_price">£12.75</span>
-                </div>
-            </div>
-            <button class="arrivals__all"><a href="#">All arrivals</a></button>
-        </section>
+            </a>
+        </div>
+    </section>
 
-        <footer class="main-footer">
-            <ul class="main-footer__site-information main-footer__site-information_links">
-                <li class="site-information__item site-information__item_title">Quick Links</li>
-                <li class="site-information__item"><a href="#">Store locator</a></li>
-                <li class="site-information__item"><a href="#">Gift cards</a></li>
-                <li class="site-information__item"><a href="#">Size guide</a></li>
-                <li class="site-information__item"><a href="#">About us</a></li>
-                <li class="site-information__item"><a href="#">Support</a></li>
-            </ul>
-            <ul class="main-footer__site-information main-footer__site-information_customer">
-                <li class="site-information__item site-information__item_title">Customer Care</li>
-                <li class="site-information__item"><a href="#">Customer service</a></li>
-                <li class="site-information__item"><a href="#">Track my order</a></li>
-                <li class="site-information__item"><a href="#">Return policy</a></li>
-                <li class="site-information__item"><a href="#">Shipping & delivery</a></li>
-                <li class="site-information__item"><a href="#">Contact us</a></li>
-                <li class="site-information__item"><a href="#">Careers</a></li>
-            </ul>
-            <ul class="main-footer__site-information main-footer__site-information_questions">
-                <li class="site-information__item site-information__item_title">Questions</li>
-                <li class="site-information__item site-information__item_twitter">Tweet us <a href="#">@<strong>template</strong></a></li>
-            </ul>
-            <ul class="main-footer__site-information main-footer__site-information_order">
-                <li class="site-information__item site-information__item_title">Order by phone</li>
-                <li class="site-information__item"><a href="tel:+88004094712">8-800-409-47-12</a></li>
-            </ul>
-            <div class="main-footer__additional-info">
-                <a href="#">Legal notice</a><a href="#">Privacy policy</a><a href="#">Site map</a>
+    <section class="arrivals">
+        <h2 class="arrivals__header">New arrivals</h2>
+        <div class="arrivals__goods">
+            <div class="arrivals__product">
+                <img src="img/Homepage/arrival1.jpg" class="arrivals__product_img" alt="Straight Leg Jeans">
+                <strong class="arrivals__product_name">Straight Leg Jeans</strong>
+                <span class="arrivals__product_price">£55.00</span>
             </div>
-            <ul class="main-footer__social">
-                <li class="main-footer__delivery-note">
-                    We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.
-                </li>
-                <li><a href="#" class="main-footer__social_fb" target="_blank"></a></li>
-                <li><a href="#" class="main-footer__social_twiiter" target="_blank"></a></li>
-            </ul>
-            <p class="main-footer__copyright">&copy; 2010–2015, The Template Group inc.</p>
-            <div class="main-footer__share">
-                <span class="main-footer__share_text">Share</span>
-                <span class="main-footer__share_amount">1 437</span>
+            <div class="arrivals__product">
+                <img src="img/Homepage/arrival2.jpg" class="arrivals__product_img" alt="Boyfriend T-Shirt with Bohemian Print">
+                <strong class="arrivals__product_name">Boyfriend T-Shirt with
+                    Bohemian Print</strong>
+                <span class="arrivals__product_price">£34.25</span>
             </div>
-        </footer>
+            <div class="arrivals__product arrivals__product_tablet">
+                <img src="img/Homepage/arrival3.jpg" class="arrivals__product_img" alt="Knee Jean">
+                <strong class="arrivals__product_name">Only Busted Knee Jean</strong>
+                <span class="arrivals__product_price">£140.50</span>
+            </div>
+            <div class="arrivals__product arrivals__product_desktop">
+                <img src="img/Homepage/arrival4.jpg" class="arrivals__product_img" alt="Only Skinny Jeans">
+                <strong class="arrivals__product_name">Only Skinny Jeans</strong>
+                <span class="arrivals__product_price">£12.75</span>
+            </div>
+        </div>
+        <button class="arrivals__all"><a href="#">All arrivals</a></button>
+    </section>
 
-    </div>
+    <footer class="main-footer">
+        <ul class="main-footer__site-information main-footer__site-information_links">
+            <li class="site-information__item site-information__item_title">Quick Links</li>
+            <li class="site-information__item"><a href="#">Store locator</a></li>
+            <li class="site-information__item"><a href="#">Gift cards</a></li>
+            <li class="site-information__item"><a href="#">Size guide</a></li>
+            <li class="site-information__item"><a href="#">About us</a></li>
+            <li class="site-information__item"><a href="#">Support</a></li>
+        </ul>
+        <ul class="main-footer__site-information main-footer__site-information_customer">
+            <li class="site-information__item site-information__item_title">Customer Care</li>
+            <li class="site-information__item"><a href="#">Customer service</a></li>
+            <li class="site-information__item"><a href="#">Track my order</a></li>
+            <li class="site-information__item"><a href="#">Return policy</a></li>
+            <li class="site-information__item"><a href="#">Shipping & delivery</a></li>
+            <li class="site-information__item"><a href="#">Contact us</a></li>
+            <li class="site-information__item"><a href="#">Careers</a></li>
+        </ul>
+        <ul class="main-footer__site-information main-footer__site-information_questions">
+            <li class="site-information__item site-information__item_title">Questions</li>
+            <li class="site-information__item site-information__item_twitter">Tweet us <a href="#">@<strong>template</strong></a></li>
+        </ul>
+        <ul class="main-footer__site-information main-footer__site-information_order">
+            <li class="site-information__item site-information__item_title">Order by phone</li>
+            <li class="site-information__item"><a href="tel:+88004094712">8-800-409-47-12</a></li>
+        </ul>
+        <div class="main-footer__additional-info">
+            <a href="#">Legal notice</a><a href="#">Privacy policy</a><a href="#">Site map</a>
+        </div>
+        <ul class="main-footer__social">
+            <li class="main-footer__delivery-note">
+                We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.
+            </li>
+            <li><a href="#" class="main-footer__social_fb" target="_blank"></a></li>
+            <li><a href="#" class="main-footer__social_twiiter" target="_blank"></a></li>
+        </ul>
+        <p class="main-footer__copyright">&copy; 2010–2015, The Template Group inc.</p>
+        <div class="main-footer__share">
+            <span class="main-footer__share_text">Share</span>
+            <span class="main-footer__share_amount">1 437</span>
+        </div>
+    </footer>
 
 </body>
 </html>
