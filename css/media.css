@@ -189,10 +189,11 @@
     .main-footer__social {
         box-sizing: border-box;
         order: 6;
-        flex: 1 1 20%;
+        flex: 1 1 15%;
         width: 36%;
         padding-left: 0;
-        margin-top: 44px;
+        padding-top: 44px;
+        line-height: 70px
     }
     .main-footer__share{
         border-top: 1px solid #e5e5e5;
@@ -211,7 +212,7 @@
         padding-left: 3%;
     }
     .main-footer__additional-info {
-        border-top: 1px solid #e5e5e5;
+        border-bottom: none;
         box-sizing: border-box;
         order: 7;
         flex: 0 1 14.5%;
@@ -518,6 +519,7 @@
     .main-nav__search {
         margin-left: 0;
         padding-left: 50px;
+        flex: 0 1 120px;
     }
 
     .main-nav__search input{
@@ -636,7 +638,6 @@
         flex: 0 1 86%;
         width: 24%;
         border-bottom: 1px solid #e5e5e5;
-        border-right: 1px solid #e5e5e5;
         padding-top: 4%;
     }
 
@@ -646,6 +647,7 @@
         flex: 0 1 30%;
         padding-left: 4%;
         padding-top: 4%;
+        border-left: 1px solid #e5e5e5;
     }
     .main-footer__site-information_order {
         order: 6;
@@ -660,6 +662,7 @@
         flex: 1 1 30%;
         padding-left: 3%;
         border-bottom: 1px solid #e5e5e5;
+        border-left: 1px solid #e5e5e5;
         margin-top: 0;
         padding-top: 44px;
     }
@@ -752,6 +755,7 @@
         width: 100%;
         position: absolute;
         box-sizing: border-box;
+        flex-wrap: nowrap;
     }
 
     .filter-dropdown__item {
@@ -847,6 +851,7 @@
 
     .item-details {
         padding-top: 63px;
+        flex-wrap: nowrap;
         padding-bottom: 82px;
     }
 

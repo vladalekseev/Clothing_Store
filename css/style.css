@@ -242,7 +242,6 @@ body {
 
 .recommended {
     display: flex;
-    flex-wrap: wrap;
 }
     .recommended__product{
         flex: 0 1 100%;
@@ -934,7 +933,7 @@ body {
     flex-wrap: wrap;
 }
     .main-footer__site-information {
-        flex: 0 1 50%;
+        flex: 1 1 40%;
         padding: 25px 0 63px 5%;
         box-sizing: border-box;
     }
@@ -959,6 +958,9 @@ body {
             padding: 16px 0 45px 5%;
             border: 1px solid #e5e5e5;
         }
+        .main-footer__site-information_order {
+            border-left: none;
+        }
         .main-footer__site-information_order > .site-information__item_title, .main-footer__site-information_questions > .site-information__item_title {
             margin-bottom: 14px;
         }
@@ -976,7 +978,7 @@ body {
             }
 
     .main-footer__additional-info {
-        flex: 0 1 70%;
+        flex: 1 1 55%;
         height: 60px;
         line-height: 60px;
         border-bottom: 1px solid #e5e5e5;
@@ -1031,7 +1033,7 @@ body {
             box-shadow: inset 1px 1px 3px #999;
         }
     .main-footer__copyright {
-        flex: 0 1 65%;
+        flex: 1 1 50%;
         box-sizing: border-box;
         padding-left: 5%;
         font-weight: bold;
