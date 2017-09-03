@@ -624,10 +624,12 @@
         width: 26%;
         border-bottom: 1px solid #e5e5e5;
         padding-top: 4%;
+        flex: 0 1 86%;
     }
     .main-footer__copyright{
         width: 26%;
         border: none;
+        flex: 0 1 14%;
     }
     .main-footer__site-information_customer {
         flex: 0 1 86%;
@@ -640,28 +642,30 @@
     .main-footer__site-information_questions {
         order: 3;
         width: 25%;
-        flex: 0 1 20%;
+        flex: 0 1 30%;
         padding-left: 4%;
         padding-top: 4%;
     }
     .main-footer__site-information_order {
         order: 6;
         width: 25%;
-        flex: 1 1 20%;
+        flex: 0 1 86%;
         padding-top: 4%;
         border-bottom: 1px solid #e5e5e5;
     }
     .main-footer__social {
         order: 4;
         width: 25%;
-        flex: 1 1 40%;
+        flex: 0 1 56%;
         padding-left: 3%;
         border-bottom: 1px solid #e5e5e5;
+        margin-top: 0;
+        padding-top: 44px;
     }
     .main-footer__share{
         order: 5;
         width: 25%;
-        flex: 0 1 10%;
+        flex: 0 1 14%;
         padding-left: 0;
         margin-left: -5%;
         border: none;
