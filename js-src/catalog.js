@@ -36,20 +36,26 @@ function renderFilter() {
     const value = selectorAll('.filter-item_value'),
           filterList = selector('.catalog__filter-list'),
           filterDropdown = selector('.filter-dropdown'),
-          dropdownItem = selectorAll('.filter-dropdown__item'),
-          catalog = selector('.catalog');
+          dropdownItems = selectorAll('.filter-dropdown__item'),
+          catalog = selector('.catalog'),
+          catalogItems = selectorAll('.catalog__filter-item');
 
     if(document.body.clientWidth >= 1024) {
         filterList.appendChild(filterDropdown);
-        filterList.on('mouseover', (e) => {
-            if(e.target.classList.contains('catalog__filter-item')) {
-                const target = dropdownItem[+e.target.getAttribute('data-filter')];
-                e.target.on('mousemove', () => { target.classList.add('visible') });
-                e.target.on('mouseout', () => { target.classList.remove('visible') });
-
-                target.on('mouseover', () => { target.classList.add('visible') });
-                target.on('mouseout', () => { target.classList.remove('visible') });
-            }
+        filterDropdown.style.width = filterList.clientWidth + 'px';
+        [].forEach.call(catalogItems, (item, i) => {
+           item.on('mouseover', ()=> {
+              dropdownItems[i].classList.add('visible');
+           });
+            item.on('mouseout', ()=> {
+                dropdownItems[i].classList.remove('visible');
+            });
+            dropdownItems[i].on('mouseover', ()=> {
+                dropdownItems[i].classList.add('visible');
+            });
+            dropdownItems[i].on('mouseout', () => {
+                dropdownItems[i].classList.remove('visible');
+            });
         });
     }else {
         [].forEach.call(value, (val) => {val.style.display = 'none'});

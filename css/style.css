@@ -430,6 +430,7 @@ body {
     }
 
     .filter-dropdown {
+        box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
         padding-top: 20px;

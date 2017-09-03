@@ -37,28 +37,26 @@ function renderFilter() {
     var value = selectorAll('.filter-item_value'),
         filterList = selector('.catalog__filter-list'),
         filterDropdown = selector('.filter-dropdown'),
-        dropdownItem = selectorAll('.filter-dropdown__item'),
-        catalog = selector('.catalog');
+        dropdownItems = selectorAll('.filter-dropdown__item'),
+        catalog = selector('.catalog'),
+        catalogItems = selectorAll('.catalog__filter-item');
 
     if (document.body.clientWidth >= 1024) {
         filterList.appendChild(filterDropdown);
-        filterList.on('mouseover', function (e) {
-            if (e.target.classList.contains('catalog__filter-item')) {
-                var target = dropdownItem[+e.target.getAttribute('data-filter')];
-                e.target.on('mousemove', function () {
-                    target.classList.add('visible');
-                });
-                e.target.on('mouseout', function () {
-                    target.classList.remove('visible');
-                });
-
-                target.on('mouseover', function () {
-                    target.classList.add('visible');
-                });
-                target.on('mouseout', function () {
-                    target.classList.remove('visible');
-                });
-            }
+        filterDropdown.style.width = filterList.clientWidth + 'px';
+        [].forEach.call(catalogItems, function (item, i) {
+            item.on('mouseover', function () {
+                dropdownItems[i].classList.add('visible');
+            });
+            item.on('mouseout', function () {
+                dropdownItems[i].classList.remove('visible');
+            });
+            dropdownItems[i].on('mouseover', function () {
+                dropdownItems[i].classList.add('visible');
+            });
+            dropdownItems[i].on('mouseout', function () {
+                dropdownItems[i].classList.remove('visible');
+            });
         });
     } else {
         [].forEach.call(value, function (val) {
