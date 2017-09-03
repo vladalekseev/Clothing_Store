@@ -617,14 +617,15 @@
 
     .main-footer {
         padding: 0;
-        height: 500px;
+        min-height: 500px;
+        height: 0;
     }
 
     .main-footer__site-information_links {
         width: 26%;
         border-bottom: 1px solid #e5e5e5;
         padding-top: 4%;
-        flex: 0 1 86%;
+        flex: 1 1 30%;
     }
     .main-footer__copyright{
         width: 26%;
@@ -656,7 +657,7 @@
     .main-footer__social {
         order: 4;
         width: 25%;
-        flex: 0 1 56%;
+        flex: 1 1 30%;
         padding-left: 3%;
         border-bottom: 1px solid #e5e5e5;
         margin-top: 0;
