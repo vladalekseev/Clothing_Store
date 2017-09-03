@@ -42,7 +42,6 @@ function renderFilter() {
 
     if(document.body.clientWidth >= 1024) {
         filterList.appendChild(filterDropdown);
-        filterDropdown.style.width = filterList.clientWidth + 'px';
         [].forEach.call(catalogItems, (item, i) => {
            item.on('mouseover', ()=> {
               dropdownItems[i].classList.add('visible');

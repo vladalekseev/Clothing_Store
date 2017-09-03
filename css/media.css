@@ -650,7 +650,7 @@
     .main-footer__site-information_order {
         order: 6;
         width: 25%;
-        flex: 0 1 86%;
+        flex: 1 1 50%;
         padding-top: 4%;
         border-bottom: 1px solid #e5e5e5;
     }
@@ -749,7 +749,9 @@
         padding: 0 4.5%;
         left: 0;
         top: 62px;
+        width: 100%;
         position: absolute;
+        box-sizing: border-box;
     }
 
     .filter-dropdown__item {
