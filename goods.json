@@ -3,50 +3,99 @@
     "articul" : "001",
     "name" : "Only Skinny Jeans",
     "price" : "65.50",
-    "image" : "img/Catalog/product1.jpg"
+    "image" : "img/Catalog/product1.jpg",
+    "sizes" : ["17", "18", "19"],
+    "colors" : ["Black","White"]
   },
   {
     "articul" : "002",
     "name" : "Neck Knitted Jumper",
     "price" : "76.25",
-    "image" : "img/Catalog/product2.jpg"
+    "image" : "img/Catalog/product2.jpg",
+    "sizes" : ["17", "18", "19"],
+    "colors" : ["Black","White"]
   },
   {
     "articul" : "003",
     "name" : "Turtle Neck Jumper in Rib",
     "price" : "130.25",
-    "image" : "img/Catalog/product3.jpg"
+    "image" : "img/Catalog/product3.jpg",
+    "sizes" : ["17", "18", "19"],
+    "colors" : ["Black","White"]
   },
   {
     "articul" : "004",
     "name" : "With Patchwork Crochet",
     "price" : "80.60",
-    "image" : "img/Catalog/product4.jpg"
+    "image" : "img/Catalog/product4.jpg",
+    "sizes" : ["17", "18", "19"],
+    "colors" : ["Black","White"]
   },
   {
     "articul" : "005",
     "name" : "Levi’s Jeans for women",
-    "price" : "80.60",
+    "price" : "",
     "image" : "img/Catalog/product5.jpg",
-    "note" : "More colours"
+    "note" : "More colours",
+    "sizes" : ["17", "18", "19"],
+    "colors" : ["Black","White"]
   },
   {
     "articul" : "006",
     "name" : "Boyfriend T-Shirt with Bohemian Print",
     "price" : "90.00",
     "image" : "img/Catalog/product6.jpg",
-    "note" : "£120.00 -25%"
+    "note" : "£120.00 -25%",
+    "sizes" : ["17", "18", "19"],
+    "colors" : ["Black","White"]
   },
   {
     "articul" : "007",
     "name" : "Colour Block",
     "price" : "550.50",
-    "image" : "img/Catalog/product7.jpg"
+    "image" : "img/Catalog/product7.jpg",
+    "sizes" : ["17", "18", "19"],
+    "colors" : ["Black","White"]
   },
   {
     "articul" : "008",
     "name" : "Monki Festval Knitted",
     "price" : "24.75",
-    "image" : "img/Catalog/product8.jpg"
+    "image" : "img/Catalog/product8.jpg",
+    "sizes" : ["17", "18", "19"],
+    "colors" : ["Black","White"]
+  },
+  {
+    "articul" : "009",
+    "name" : "Oversized Cardigan",
+    "price" : "90.00",
+    "image" : "img/Catalog/product9.jpg",
+    "sizes" : ["17", "18", "19"],
+    "colors" : ["Black","White"]
+  },
+  {
+    "articul" : "010",
+    "name" : "Paul & Joe Sister Jumper with Neon Trims",
+    "price" : "19.75",
+    "image" : "img/Catalog/product10.jpg",
+    "note" : "New",
+    "sizes" : ["17", "18", "19"],
+    "colors" : ["Black","White"]
+  },
+  {
+    "articul" : "011",
+    "name" : "Only Busted Knee Jean",
+    "price" : "140.50",
+    "image" : "img/Catalog/product11.jpg",
+    "sizes" : ["17", "18", "19"],
+    "colors" : ["Black","White"]
+  },
+  {
+    "articul" : "012",
+    "name" : "Boyfriend T-Shirt with Bohemian Print",
+    "price" : "85.75",
+    "image" : "img/Catalog/product12.jpg",
+    "sizes" : ["17", "18", "19"],
+    "colors" : ["Black","White"]
   }
 ]

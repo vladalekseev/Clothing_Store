@@ -425,7 +425,7 @@
         padding: 18px 63px;
     }
     .shopping-bag__product {
-        flex: 1 1 50%;
+        flex: 0 1 50%;
         margin: 30px 0 60px;
     }
     .shopping-bag__product_overlay {
@@ -615,14 +615,13 @@
 
 
     .main-footer {
-        padding: 0;
+        padding: 3% 0 0 0;
         height: 500px;
     }
 
     .main-footer__site-information_links {
         width: 26%;
         border-bottom: 1px solid #e5e5e5;
-        padding-top: 3%;
     }
     .main-footer__copyright{
         width: 26%;
@@ -633,7 +632,6 @@
         width: 24%;
         border-bottom: 1px solid #e5e5e5;
         border-right: 1px solid #e5e5e5;
-        padding-top: 3%;
     }
 
     .main-footer__site-information_questions {
@@ -641,13 +639,11 @@
         width: 25%;
         flex: 0 1 20%;
         padding-left: 4%;
-        padding-top: 3%;
     }
     .main-footer__site-information_order {
         order: 6;
         width: 25%;
         flex: 1 1 20%;
-        padding-top: 3%;
         border-bottom: 1px solid #e5e5e5;
     }
     .main-footer__social {

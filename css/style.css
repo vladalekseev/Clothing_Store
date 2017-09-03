@@ -31,12 +31,15 @@ body {
         margin-right: 5%;
         letter-spacing: .5px;
     }
+        .main-header__state a {
+            display: block;
+        }
+        .main-header__state a:hover {
+            color: #f13f4e;
+        }
         .state__sign-up {
             display: none;
             flex: 0 1 auto;
-        }
-        .state__sign-up a:hover {
-            color: #d00;
         }
         .state__bag {
             flex: 0 1 auto;
@@ -362,11 +365,11 @@ body {
     .arrivals__all a{
         display: block;
     }
-    .arrivals__all a:hover{
-        color: #f14a58;
-    }
     .arrivals__all:hover {
         border: 1px solid #f14a58;
+    }
+    .arrivals__all:hover a{
+        color: #f14a58;
     }
 
 
@@ -535,6 +538,7 @@ body {
         flex: 0 1 100%;
         margin: 0 0 66px;
         text-align: center;
+        oreder: 1;
     }
     .catalog__promo_proposal {
         letter-spacing: 1px;
@@ -609,6 +613,21 @@ body {
                 font: italic 14px 'Times New Roman',sans-serif;
                 color: #ccced5;
             }
+.catalog__product:nth-of-type(2) {
+    order: 3;
+}
+.catalog__product:nth-of-type(3) {
+    oreder: 4;
+}
+.catalog__product:nth-of-type(4),.catalog__product:nth-of-type(5),.catalog__product:nth-of-type(6),.catalog__product:nth-of-type(7),.catalog__product:nth-of-type(8),.catalog__product:nth-of-type(9) {
+    order: 6;
+}
+
+
+.catalog__promo {
+    order: 5;
+    margin-top: 25px;
+}
 
 
 

@@ -1,60 +1,66 @@
-'use strict';
+document.addEventListener('DOMContentLoaded', function() {
 
-document.addEventListener('DOMContentLoaded', function () {
 
     loadHeader();
     loadFooter();
 
+
     /*==========  Expand search ==========*/
 
-    var magnifier = selector('.main-nav__search');
+    const magnifier = selector('.main-nav__search');
     document.body.clientWidth < 1024 && magnifier.on('click', expandSearch);
+
+
 });
 
-function loadHeader() {
-    var header = selector('.main-header');
 
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'header.html', false);
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4 && xhr.status != 4) {
+function loadHeader() {
+    const header = selector('.main-header');
+
+    const xhr = new XMLHttpRequest();
+    xhr. open('GET', 'header.html', false);
+    xhr.onreadystatechange = function() {
+        if(xhr.readyState == 4 && xhr.status != 4) {
 
             header.outerHTML = xhr.responseText;
 
             /*==========  Sandwich toggle  ==========*/
 
-            var sandwich = selector('.main-header__sandwich');
+            const sandwich = selector('.main-header__sandwich');
             sandwich.on('click', sandwichToggle);
+
+
         }
     };
     xhr.send();
 }
 
 function loadFooter() {
-    var footer = selector('.main-footer');
+    const footer = selector('.main-footer');
 
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'footer.html');
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4 && xhr.status != 4) {
+    const xhr = new XMLHttpRequest();
+    xhr. open('GET', 'footer.html');
+    xhr.onreadystatechange = function() {
+        if(xhr.readyState == 4 && xhr.status != 4) {
             footer.outerHTML = xhr.responseText;
         }
     };
     xhr.send();
 }
 
-/*==========  Sandwich toggle  ==========*/
+
+    /*==========  Sandwich toggle  ==========*/
 
 function sandwichToggle() {
 
-    var sandwichItems = selectorAll('.main-header__sandwich > li');
+    const sandwichItems = selectorAll('.main-header__sandwich > li');
     selector('.main-nav').classList.toggle('nav-hidden');
     sandwichItems[0].classList.toggle('main-header__sandwic_first-child');
     sandwichItems[1].classList.toggle('hidden');
     sandwichItems[2].classList.toggle('main-header__sandwich_last-child');
 }
 
-/*==========  Expand search ==========*/
+    /*==========  Expand search ==========*/
 
 function expandSearch() {
     this.classList.add('expand-search');
@@ -62,8 +68,9 @@ function expandSearch() {
     document.querySelector('.main-nav').style.paddingRight = '12%';
 }
 
+
 /*==========  Helpers ==========*/
-Object.prototype.on = function (event, fn) {
+Object.prototype.on = function(event, fn) {
     this.addEventListener(event, fn);
 };
 
